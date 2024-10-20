@@ -8,7 +8,6 @@ using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
-    public GameObject ball;
     public GameObject LPaddle;
     public GameObject RPaddle;
     private int minY;
@@ -39,8 +38,6 @@ public class Movement : MonoBehaviour
      {
         RPaddle.transform.position = new Vector3(RPaddle.transform.position.x, Mathf.Clamp(RPaddle.transform.position.y - 0.01f, -3.5f, 3.5f));
      }
-
-  ball.transform.position += Vector3.right * 5.0f * dt;
   
 
      
