@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -19,23 +20,25 @@ public class ballscore : MonoBehaviour
         float dt = Time.deltaTime;
         float speed = 5.0f;
         transform.position += Vector3.left * speed * dt;
-        double a = 0;
+  int score1 = 0;
+  int score2 = 0;
+
 
         if (transform.position.x >= 10)
         {
-
+          score1++;
             transform. position = new Vector3(0.0f, 0.0f, 0.0f);
-            double aa = a++;
-            double aaa = ++a;
-             Debug.Log("Player 1's score is now" + aaa);
+             Debug.Log("Player 1's score is now" + score1);
         }
+              
+              
+              
+              
                if (transform.position.x <= -10)
         {
-
+            score2++;
             transform. position = new Vector3(0.0f, 0.0f, 0.0f);
-            double aa = a++;
-            double aaa = ++a;
-             Debug.Log("Player 2's score is now" + aaa);
+             Debug.Log("Player 2's score is now" + score2);
         }
 
 

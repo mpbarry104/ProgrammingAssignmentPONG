@@ -132,8 +132,8 @@ GameObject:
   m_Component:
   - component: {fileID: 196504630}
   - component: {fileID: 196504629}
-  - component: {fileID: 196504628}
   - component: {fileID: 196504631}
+  - component: {fileID: 196504632}
   m_Layer: 0
   m_Name: LeftPaddle
   m_TagString: Untagged
@@ -141,20 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &196504628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196504627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed0963b5f68e1a7439209e18caad5bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LPaddle: {fileID: 0}
-  RPaddle: {fileID: 0}
 --- !u!212 &196504629
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -267,6 +253,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &196504632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196504627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8820a143fe2cb47bd62b7d87058eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +512,7 @@ GameObject:
   - component: {fileID: 1829737148}
   - component: {fileID: 1829737147}
   - component: {fileID: 1829737150}
+  - component: {fileID: 1829737151}
   m_Layer: 0
   m_Name: RightPaddle
   m_TagString: Untagged
@@ -632,6 +632,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1829737151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829737146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8820a143fe2cb47bd62b7d87058eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
