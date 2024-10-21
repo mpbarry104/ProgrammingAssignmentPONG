@@ -23,7 +23,7 @@ public class ballscore : MonoBehaviour
   int score1 = 0;
   int score2 = 0;
 
-
+// player 1 goal
         if (transform.position.x >= 10)
         {
           score1++;
@@ -33,7 +33,7 @@ public class ballscore : MonoBehaviour
               
               
               
-              
+//player 2 goal
                if (transform.position.x <= -10)
         {
             score2++;
