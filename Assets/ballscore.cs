@@ -18,17 +18,26 @@ public class ballscore : MonoBehaviour
     {
         float dt = Time.deltaTime;
         float speed = 5.0f;
-        transform.position += Vector3.right * speed * dt;
-        int score = 0;
-        int P1Score = ++score;
+        transform.position += Vector3.left * speed * dt;
+        double a = 0;
 
         if (transform.position.x >= 10)
         {
 
             transform. position = new Vector3(0.0f, 0.0f, 0.0f);
-            P1Score = P1Score + score++;
-            Debug.Log("currently player 1's score is " + P1Score);
+            double aa = a++;
+            double aaa = ++a;
+             Debug.Log("Player 1's score is now" + aaa);
         }
+               if (transform.position.x <= -10)
+        {
+
+            transform. position = new Vector3(0.0f, 0.0f, 0.0f);
+            double aa = a++;
+            double aaa = ++a;
+             Debug.Log("Player 2's score is now" + aaa);
+        }
+
 
 
         
