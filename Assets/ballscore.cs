@@ -6,11 +6,12 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class ballscore : MonoBehaviour
 {
+  private int score1 = 0;
+  private int score2 = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-
 
     }
 
@@ -20,8 +21,6 @@ public class ballscore : MonoBehaviour
         float dt = Time.deltaTime;
         float speed = 5.0f;
         transform.position += Vector3.left * speed * dt;
-  int score1 = 0;
-  int score2 = 0;
 
 // player 1 goal
         if (transform.position.x >= 10)
