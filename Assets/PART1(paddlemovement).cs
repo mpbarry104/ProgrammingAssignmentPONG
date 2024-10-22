@@ -10,8 +10,6 @@ public class Movement : MonoBehaviour
 {
     public GameObject LPaddle;
     public GameObject RPaddle;
-    private int minY;
-    private int maxY;
     // Start is called before the first frame update
     void Start()
     {
