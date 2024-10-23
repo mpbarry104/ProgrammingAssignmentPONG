@@ -16,7 +16,7 @@ public class ballscore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       float angle = 85.0f * Mathf.Deg2Rad;
+       float angle = 65.0f * Mathf.Deg2Rad;
         direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
         transform.position = Vector3.zero;
     }
