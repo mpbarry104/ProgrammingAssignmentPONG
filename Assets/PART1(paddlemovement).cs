@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    //moves the 2 players
     {
           float dt = Time.deltaTime;
      if (Input.GetKey(KeyCode.W))

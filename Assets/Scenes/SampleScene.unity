@@ -265,6 +265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da23744165ca3740a6ab89a04193303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collider: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +369,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1145562533}
   - component: {fileID: 1145562532}
-  - component: {fileID: 1145562534}
   - component: {fileID: 1145562535}
   - component: {fileID: 1145562536}
   m_Layer: 0
@@ -406,21 +407,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1145562534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145562531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6845adb399af0a94eb7b855bb0944946, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 1630701100}
-  lpaddle: {fileID: 196504627}
-  rpaddle: {fileID: 1829737146}
 --- !u!61 &1145562535
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,12 +10,14 @@ public class ballscore : MonoBehaviour
 {
   private int score1 = 0;
   private int score2 = 0;
+  //saving ball score
    Vector2 direction = Vector2.up;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        //made the ball bounce
        float angle = 65.0f * Mathf.Deg2Rad;
         direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
         transform.position = Vector3.zero;
@@ -28,7 +30,7 @@ public class ballscore : MonoBehaviour
         float speed = 5.0f;
         Vector3 change = direction * speed * dt;
         transform.position += change;
-      
+      //bounces off ceiling (y)
          if (transform.position.y < 4.75f)
         {
             direction.y = -direction.y;
@@ -37,7 +39,7 @@ if (transform.position.y > -4.75f)
         {
             direction.y = -direction.y;
         }
-
+//randomizer for direction
  static int number(int min, int max)
         {
             System.Random random = new System.Random();
@@ -52,6 +54,8 @@ if (transform.position.y > -4.75f)
           score1++;
             transform. position = new Vector3(0.0f, 0.0f, 0.0f);
              Debug.Log("Player 1's score is now" + score1);
+
+             //tried randomizing direction here not sure why it didnt work
                      if (number(1, 3) == 1)
         {
             transform.position += Vector3.left * speed * dt;
@@ -71,6 +75,8 @@ if (transform.position.y > -4.75f)
             score2++;
             transform. position = new Vector3(0.0f, 0.0f, 0.0f);
              Debug.Log("Player 2's score is now" + score2);
+
+             //tried randomizing direction here not sure why it didnt work
                      if (number(1, 3) == 1)
         {
             transform.position += Vector3.left * speed * dt;
